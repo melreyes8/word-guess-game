@@ -29,12 +29,17 @@ h2 {
     margin: -70px;
 }
 
-p {
+div, p {
     color: white;
     font-family: monospace;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
+}
+
+#smallfont {
+    font-size: 10px;
+    font-style: italic;
 }
 
 #mainDiv {
@@ -75,3 +80,38 @@ img {
     padding-top: 20px;
     object-fit: cover;
 }
+
+#winCounter, #wins {
+    color: gold;
+}
+
+#wins {
+    float: left;
+    border: solid 2px;
+    width: 150px;
+    text-align: center;
+}
+
+#loss {
+    float: right;
+    border: solid 2px;
+    width: 150px;
+    text-align: center;
+    color: red;
+}
+
+/* #currentword {
+    margin-top: 10px; */
+}
+
+#wrongGuesses {
+    color: red;
+}
+
+#numGuessesLeft {
+    animation: blinker 2s linear infinite;
+  }
+  
+  @keyframes blinker {  
+    50% { opacity: 0; }
+  }

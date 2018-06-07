@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Monoton" rel="stylesheet">
 
 </head>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 <body>
     <header>
         <h1>HANGMAN</h1>
@@ -17,26 +18,36 @@
     </header>
     <div id="mainDiv">
         <div id="leftDiv">
-            <p>ROLL THAT FILM</p>
+            <p>ROLL THAT FILM!</p>
+            <p id="smallfont">(If you guessed the one-word movie title correctly)</p>
             <div id="filmDiv">
                 <img src="http://fanboygaming.com/wp-content/uploads/2012/10/movie2.jpg" alt="Movie Film">
-                <a href="http://fanboygaming.com/wp-content/uploads/2012/10/movie2.jpg"></a>
             </div>
         </div>
         <div id="rightDiv">
             <p>PRESS ANY KEY TO GET STARTED!</p>
+            <br>
+            <div id="wins">WINS
             <br><br>
-            <p>WINS</p>
-<br><br><br>
-            <p>CURRENT WORD</p>
-<br><br><br>
+                <span id="winCounter">0</span>
+            </div>
+            <div id="loss">LOSSES
+            <br><br>
+                <span id="lossCounter">0</span>
+            </div>
+            
+            <div id="currentWord">CURRENT WORD</div>
+
+            <div id="titleToGuess">_ _ _ _ _ _ _ _ _ _</div>
+<br><br>
             <p>NUMBER OF GUESSES REMAINING</p>
+                <span id="numGuessesLeft"></span>
 <br><br><br>
-            <P>LETTERS ALREADY GUESSED</P>
+            <p>LETTERS ALREADY GUESSED</p>
+                <span id="wrongGuesses"></span>
 
         </div>
     </div>
-
 
 </body>
 </html>
