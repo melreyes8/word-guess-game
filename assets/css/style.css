@@ -100,16 +100,33 @@ img {
     color: red;
 }
 
-/* #currentword {
-    margin-top: 10px; */
+#currentWord {
+    border: solid 2px;
+    margin-top: 10px;
+    padding: 20px;
+    margin-top: 50px;
 }
 
 #wrongGuesses {
     color: red;
 }
 
+#guessesRemaining {
+    border: solid 2px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#ltrGuessed {
+    border: solid 2px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+}
+
 #numGuessesLeft {
-    animation: blinker 2s linear infinite;
+    animation: blinker 1s linear infinite;
   }
   
   @keyframes blinker {  

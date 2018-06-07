@@ -20,14 +20,6 @@ var winCount = 0;
 
 var lossCount = 0;
 
-// var alphabet = getAlphabetArray();
-
-// var underScores = [];
-
-// var userGuesses = [];
-
-// var randomWord;
-
 function reset(){
     chosenTitle = movieTitles[Math.floor(Math.random() * movieTitles.length)];
     lettersInTitle = chosenTitle.split('');
@@ -72,7 +64,7 @@ function startGame(){
 }
 
 function compareLetters (userKey){
-    console.log('WORKING!');
+    // console.log('WORKING!');
     if(chosenTitle.indexOf(userKey) > -1){
         for(var i = 0; i < numBlanks; i++){
             if(lettersInTitle[i] === userKey){
@@ -86,12 +78,12 @@ function compareLetters (userKey){
     }
     else{
         wrongLetters.push(userKey);
-        guessesLeft--;
+        guessesRemaining--;
         
         document.querySelector('#numGuessesLeft').innerText = guessesRemaining;
         document.querySelector('#wrongGuesses').innerText = wrongLetters;
         
-        console.log('Wrong Letters = ' + wrongLetters);
+        console.log('Wrong letters = ' + wrongLetters);
         console.log('Guesses remaining are ' + guessesRemaining);
     }
 }
@@ -119,7 +111,7 @@ document.onkeyup = function(event){
     var letterGuessed = event.key;
     for(var i = 0; i < alphabetArray.length; i++){
         if(letterGuessed === alphabetArray[i] && test === true){
-            var spliceDword = alphabetArray.splice(i.1);
+            var spliceDword = alphabetArray.splice(i,1);
             
             console.log('Double word is = ' + alphabetArray[i]);
             console.log('Splice word is = ' + spliceDword);

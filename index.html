@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Monoton" rel="stylesheet">
 
 </head>
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
 <body>
     <header>
         <h1>HANGMAN</h1>
@@ -35,19 +34,21 @@
             <br><br>
                 <span id="lossCounter">0</span>
             </div>
-            
-            <div id="currentWord">CURRENT WORD</div>
-
-            <div id="titleToGuess">_ _ _ _ _ _ _ _ _ _</div>
-<br><br>
-            <p>NUMBER OF GUESSES REMAINING</p>
+        <br><br>    
+            <div id="currentWord">CURRENT WORD
+            <br><br>
+                <span id="titleToGuess">_ _ _ _ _ _ _ _ _ _</span>
+            </div>
+            <div id="guessesRemaining">NUMBER OF GUESSES REMAINING
                 <span id="numGuessesLeft"></span>
-<br><br><br>
-            <p>LETTERS ALREADY GUESSED</p>
+            </div>
+            <div id="ltrGuessed">LETTERS ALREADY GUESSED
+            <br><br>
                 <span id="wrongGuesses"></span>
-
+            </div>
         </div>
     </div>
 
+<script src="assets/javascript/game.js"></script>
 </body>
 </html>
