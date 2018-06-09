@@ -1,25 +1,37 @@
-var movieTitles = ['Salt', 'Argo', 'Thor', 'Halloween', 'Jumanji', 'Cinderella'];
+// words to guess
+var movieTitles = ['salt', 'argo', 'thor', 'halloween', 'jumanji', 'cinderella'];
 
+// all letters for random input
 var alphabetArray = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 
-var chosenTitle = "";
-
-var lettersInTitle = [];
-
-var numBlanks = 0;
-
-var blanksAndSuccesses = [];
-
-var wrongLetters = [];
-
-var guessesRemaining = 9;
-
-var rightGuessCounter = 0;
-
+// shows the number of wins
 var winCount = 0;
 
+// shows the number of losses
 var lossCount = 0;
 
+// drives the win counter
+var rightGuessCounter = 0;
+
+// shows the number of attempts left to input more letters to guess the word
+var guessesRemaining = 10;
+
+// placeholder for the chosen word
+var chosenTitle = "";
+
+// placeholders for letters in the word
+var lettersInTitle = [];
+
+// number of blanks in the word 
+var numBlanks = 0;
+
+// placeholder for blanks and successful guesses 
+var blanksAndSuccesses = [];
+
+// placeholder for the wrong guesses  
+var wrongLetters = [];
+
+// Below are functions for the word game
 function reset(){
     chosenTitle = movieTitles[Math.floor(Math.random() * movieTitles.length)];
     lettersInTitle = chosenTitle.split('');
@@ -27,7 +39,7 @@ function reset(){
 
     letterGuessed = 0;
     rightGuessCounter = 0;
-    guessesRemaining: 9;
+    guessesRemaining: 10;
     wrongLetters = [];
     blanksAndSuccesses = [];
     alphabetArray = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
@@ -41,7 +53,7 @@ function startGame(){
     numBlanks = lettersInTitle.length;
 
     rightGuessCounter = 0;
-    guessesRemaining = 9;
+    guessesRemaining = 10;
     wrongLetters = [];
     blanksAndSuccesses = [];    
     alphabetArray = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
@@ -122,3 +134,9 @@ document.onkeyup = function(event){
     }
 }
 
+// Play video corresponding to word/movie title succesfully guessed
+function playVideo(...){
+    var salt = document.getElementById('filmVid');
+    var 
+    if(...)
+}
